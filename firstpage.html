@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #eddbc7;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .first {
+            width: 150px; /* Adjust width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        button{
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 25px;
+            border-radius: 10px;
+            background-color: rgb(179, 133, 78);
+            
+        }
+        button:hover{
+            background-color: rgb(71, 71, 109);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="first h-1 w-auto" src="./images/logo.png" alt="logo">
+        
+        <br><br><br>
+    <button>Start your journey</button>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the button
+            const startJourneyButton = document.querySelector('button');
+
+            // Add a click event listener to the button
+            startJourneyButton.addEventListener('click', () => {
+                // Redirect to the sign-up page
+                window.location.href = './signup.html'; // Replace with actual path to signup page
+            });
+        });
+    </script>
+
+    
+
+    </div>
+</body>
+</html>
